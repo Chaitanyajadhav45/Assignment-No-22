@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather</title>
+</head>
+<body>
+    <h1 style="background-color: rgb(232, 206, 171); padding: 10px; margin: 0;">
+        What to eat
+    </h1>
+    <script>
+        let cityWeather = prompt("Enter Current Temperature: ");
+
+        if (cityWeather == null || cityWeather.length === 0) {
+            document.write("<i>Please enter valid input temperature</i> 😓");
+            alert("Please enter valid input for temperature 😓");
+            console.error("Enter valid input for temperature");
+        }
+
+        else if (cityWeather <= 0) {
+            document.write("<h3> Time to eat Ice Crean . Have  fun.</h3>");
+            alert("Time to eat Ice Crean");
+        }
+
+        else if (cityWeather > 0 && cityWeather <= 25) {
+            document.write("<h3> Eat Pastry</h3>");
+            alert(" Eat Pastry");
+        }
+
+        else if (cityWeather >= 25 && cityWeather <= 42) {
+            alert("IEat 5 star and do nothing");
+        }
+
+        else if (cityWeather >= 42 && cityWeather <= 50) {
+            
+            console.warn("Have a cup of Tea");
+            alert("Have a cup of Tea");
+        }
+
+        else {
+            alert("Please enter valid number😓");
+            console.error("Enter valid number 😓");
+        }
+
+    </script>
+</body>
+
+</html>
